@@ -1,0 +1,1 @@
+var nombre_image=p1.lenght;
