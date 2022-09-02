@@ -228,6 +228,7 @@ margin: 1px;
     left:2%;
     color: white;
     background-color: black;
+    border-radius: 50%;
     
 }
  .favorite{
@@ -236,7 +237,7 @@ margin: 1px;
     top:300px;
     color: white;
     background-color: black;
-   
+    border-radius: 50%;
 }
 
 .favorite .styled{
@@ -276,7 +277,7 @@ border-style:hidden ;
   .bl{
     border  : 1px solid; 
       height: 150px;
-      width: 23%;
+      width: 12%;
       margin: 10px;
       justify-content: center;
       border-radius: 20%;

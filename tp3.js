@@ -6,12 +6,15 @@ let nombre_image=image.length;
 function alternanceActiveImage(){
     /*parcour du tableau */
     for(let i=0;i<nombre_image;i++){
-    image[i].classList.remove('active');}
+        if (image[i].classList.contains("active")) {
+            image[i].classList.remove('active');
+        }
+}
 /*classliste permet de recupere des classes */
 
 }
 /*recuperation des boutons */
-let envoyer=document.querySelector(".second");
+let envoyer=document.querySelector(".seconde");
 let envoie=document.querySelector(".favorite");
 /*si on clic sur le bouton change moi les images du fonction */
 envoyer.addEventListener("click",function(){
