@@ -13,21 +13,25 @@ border-style:hidden
 .aligne{
     height: 90%;
     width: 35%;
+
    
 }
 .ali{
-    height: 90%;
-    width: 20%;
-    margin: 5px;
+    display: flex;
+    color: orange; 
 justify-content: center;
-color: orange;
+
+}
+.ali a{
+    color: orange;
 }
 
 .alig{
-    height: 90%;
-    width: 15%;
-    margin: 5px;
+    
+    
+
 justify-content: center;
+display: flex;
 }
 .bloc img{
     text-align: center;
@@ -45,15 +49,28 @@ justify-content: center;
 
 }
 #inter{
-  margin: 2px;  
+   
   width: 100%;
   height: 25px;
   background-color:white;
+  display: flex;  
   align-items: center;
  justify-content: center;
- display: flex;
+ 
 
-        
+}
+.al{
+    width: 20%;
+    color:orange;
+
+}
+.route{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    gap: 20px;
+    
 }
 
 .log{
@@ -74,6 +91,11 @@ justify-content: center;
     height:50px;
     width: 200px;  
  }
+ .contener.search-box{
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+ }
 .search-button{
 background-color:orange ;
 text-align: center;
@@ -90,9 +112,16 @@ border-radius: 10%;
     color: white;
 }
 input{
-    width: 80%;
+    width: 20%;
+    outline: none;
     height: 30px;
     border-radius: 10%; 
+    margin-top: -8px;
+    position: absolute;
+    border: 0.4px solid gray;
+}
+a{
+    text-decoration: none;
 }
  .search-box img{
     height:25px;
@@ -173,12 +202,12 @@ color: black;
 }
 .blo{
     
-    border-style:hidden ;
-    
-     
+    /* border-style:hidden ; */
+    display: block;
+     align-items: center;
       height: 600px;
       width: 20%;
-      margin: 5px;
+    /*   margin: 5px; */
       background-color: whitesmoke;
       
   }
@@ -278,6 +307,7 @@ height: 40px;
     text-align: left;
 }
   #contenaire{
+    display: flex;
     justify-content: center;
     margin-top: 20px;
     align-items: center;
@@ -285,7 +315,7 @@ height: 40px;
     background-color: whitesmoke; 
     color: white;
 
-border-style:hidden ;
+/* border-style:hidden ; */
 
   }
  
@@ -303,4 +333,55 @@ border-style:hidden ;
       width: 100%;
       border-radius: 20%;
  }
+/*la partie responsif*/
+@media screen and (max-width:500px) {
+   
+/*indescer les parties a afficer*/
 
+
+#contenaire{
+    width: 100%;
+    
+    
+}
+#contenair{
+flex-direction: column;/*stricture vertical*/
+height: 100%;
+width: 100%;
+}
+.blo{
+    width: 100%;
+    height: 450px;
+
+}
+.blo, ul ,li, a{
+    line-height: 40px; 
+   list-style: none;/*supprimer les styles */
+}
+.blocs{
+    width: 100%;
+}
+#pm {
+    width: 100%;
+    
+}
+#pm img{
+    width: 100%;
+}
+/*les paries a ne pas afficher*/
+#contener{
+    display: none;
+ }
+
+.blo1{
+    display: none;
+}
+
+#entete{
+    display: none;
+}
+
+}
+    
+
+    
